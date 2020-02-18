@@ -4,12 +4,14 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+           
              x:Class="ChatApp.Views.InBoxPage">
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" />
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Label
@@ -17,14 +19,89 @@
                 Grid.Row="0"
                 HorizontalOptions="Center"
                 FontSize="Large"/>
-            
-            <SearchBar Placeholder="Busca la conversacion" Grid.Row="1"/>
 
-            <CollectionView Grid.Row="2" ItemsSource="{Binding Messages}">
+            <Frame
+                Grid.Row="1"
+                Padding="0,0,0,-1"
+                BackgroundColor="#F1F1F1"
+                CornerRadius="20"
+                HasShadow="False"
+                HorizontalOptions="FillAndExpand"
+                IsClippedToBounds="True">   
+
+                <SearchBar HorizontalOptions="FillAndExpand" Placeholder="Search conversation" />
+
+            </Frame>
+            
+            <BoxView
+                Grid.Row="2"
+                BackgroundColor="#DDD"
+                HeightRequest="1" />
+
+            <CollectionView Grid.Row="3" ItemsSource="{Binding Messages}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Grid>
-                            <Label Text="dummy"/>
+                        <Grid Padding="15,10,15,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            
+                            <Frame
+                                Margin="20"
+                                Padding="0"
+                                CornerRadius="20"
+                                IsClippedToBounds="True"
+                                Grid.RowSpan="3"
+                                HasShadow="False">
+                                <Image 
+                                WidthRequest="40"
+                                HeightRequest="40"
+                                Source="{Binding UserProfilePicture}"
+                                Grid.RowSpan="3"/>
+                            </Frame>
+                            <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="1">
+
+                                <Label     
+                                    FontSize="Medium"
+                                    HorizontalOptions="StartAndExpand"
+                                    Text="{Binding Subject}"/>
+
+                                <Label  
+                                      FontSize="Small"
+                                      HorizontalOptions="End"
+                                      HorizontalTextAlignment="End"
+                                      Text="{Binding Date, StringFormat='{0:hh:mm tt}'}"
+                                      TextColor="#AAA"/>
+                            </StackLayout>
+
+
+                            <Label
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                FontSize="Small"
+                                LineBreakMode="TailTruncation"
+                                Text="{Binding Body}" />
+
+                            <Label
+                                Grid.Row="2"
+                                Grid.Column="1"
+                                FontSize="12"
+                                Text="{Binding Category}"
+                                TextColor="#888888"/>
+
+                            <BoxView
+                                Grid.Row="3"
+                                Grid.ColumnSpan="2"
+                                Margin="-10,10,-10,0"
+                                BackgroundColor="#DDD"
+                                HeightRequest="1" />
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
