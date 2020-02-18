@@ -17,7 +17,18 @@
                 Grid.Row="0"
                 HorizontalOptions="Center"
                 FontSize="Large"/>
-            <SearchBar Placeholder="Busca la conversacion"/>
+            
+            <SearchBar Placeholder="Busca la conversacion" Grid.Row="1"/>
+
+            <CollectionView Grid.Row="2" ItemsSource="{Binding Messages}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Label Text="dummy"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
