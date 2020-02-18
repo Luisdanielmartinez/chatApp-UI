@@ -8,8 +8,8 @@
              x:Class="ChatApp.MainPage"
              SelectedTabColor="#00dc99">
 
-    <view:EmptyPage IconImageSource="ic_home.png"/>
-    <view:EmptyPage IconImageSource="ic_search.png"/>
+    <view:HomePage IconImageSource="ic_home.png"/>
+    <view:SearchPage IconImageSource="ic_search.png"/>
     <view:InBoxPage IconImageSource="ic_chat.png"/>
     <view:EmptyPage IconImageSource="ic_settings.png"/>
    
