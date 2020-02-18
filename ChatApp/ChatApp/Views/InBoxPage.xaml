@@ -18,7 +18,7 @@
             <Setter Property="Margin">
                 <Setter.Value>
                     <OnPlatform x:TypeArguments="Thickness">
-                        <On Platform="android" Value="30,10"/>
+                        <On Platform="Android" Value="30,10"/>
                         <On Platform="ios" Value="0,10"/>
                     </OnPlatform>
                 </Setter.Value>
@@ -26,7 +26,7 @@
             <Setter Property="Padding">
                 <Setter.Value>
                     <OnPlatform x:TypeArguments="Thickness">
-                        <On Platform="android" Value="0,0,0,-1"/>
+                        <On Platform="Android" Value="0,0,0,-1"/>
                         <On Platform="ios" Value="0"/>
                     </OnPlatform>
                 </Setter.Value>
@@ -35,7 +35,7 @@
             <Setter Property="BackgroundColor">
                 <Setter.Value>
                     <OnPlatform x:TypeArguments="Color">
-                        <On Platform="android" Value="#F1F1F1"/>
+                        <On Platform="Android" Value="#F1F1F1"/>
                         <On Platform="ios" Value="Transparent"/>
                     </OnPlatform>
                 </Setter.Value>
@@ -44,7 +44,7 @@
             <Setter Property="CornerRadius">
                 <Setter.Value>
                     <OnPlatform x:TypeArguments="x:Single">
-                        <On Platform="android" Value="20"/>
+                        <On Platform="Android" Value="20"/>
                         <On Platform="ios" Value="0"/>
                     </OnPlatform>
                 </Setter.Value>
