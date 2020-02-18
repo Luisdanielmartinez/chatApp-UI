@@ -4,9 +4,15 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             xmlns:convs="clr-namespace:ChatApp.Converters"
              x:Class="ChatApp.Views.InBoxPage">
     
-    <ContentPage.Resources>
+    <Page.Resources>
+        <convs:BooleanToColorConverter
+            TrueColor="#00dc99"
+            FalseColor="Black"
+            x:Key="convert"/>
+        
         <Style x:Key="FrameStyle" TargetType="Frame">
 
             <Setter Property="Margin">
@@ -48,7 +54,7 @@
             <Setter Property="IsClippedToBounds" Value="True"/>
             <Setter Property="HasShadow" Value="False"/>
         </Style>
-    </ContentPage.Resources>
+    </Page.Resources>
      
     <Grid>
         
@@ -114,7 +120,7 @@
                         </Frame>
                         <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="1">
 
-                            <Label     
+                            <Label   TextColor="{Binding IsAccepted, Converter={StaticResource convert}}" 
                                     FontSize="Medium"
                                     HorizontalOptions="StartAndExpand"
                                     Text="{Binding Subject}"/>
