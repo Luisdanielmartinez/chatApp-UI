@@ -5,11 +5,50 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="ChatApp.Views.LoginPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    
+    <Grid Padding="5" VerticalOptions="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label Text="Bienvenidos" 
+                   FontSize="Large"
+                   Grid.Row="0"
+                
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+        <Frame Grid.Row="1" CornerRadius="30" >
+            <StackLayout Orientation="Vertical">
+                <Label Text="Usuario" 
+                           Margin="10,0,0,0"
+                           FontSize="Medium" 
+                           FontAttributes="Bold"/>
+                <Entry Text="{Binding UserName}"
+                           Placeholder="Escriba el usuario"/>
+                <Label Text="Contraseña"
+                           Margin="10,0,0,0"
+                           FontSize="Medium"
+                           FontAttributes="Bold"/>
+                <Entry Text="{Binding Password}"
+                           IsPassword="True"
+                           Placeholder="Escriba la Contraseña"/>
+                <Button
+                        Text="Entrar"
+                        CornerRadius="20"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        BackgroundColor="Blue"
+                        Command="{Binding LoginCommand}"/>
+                <Button
+                        Text="Registrarse"
+                        CornerRadius="20"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        BackgroundColor="Gray"
+                        Command="{Binding RegisterCommand}"/>
+            </StackLayout>
+        </Frame>
+
+    </Grid>
 </ContentPage>

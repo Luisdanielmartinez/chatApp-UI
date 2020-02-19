@@ -5,11 +5,50 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="ChatApp.Views.RegisterPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Guardar" Command="{Binding SaveCommand}"/>
+        <ToolbarItem Text="Cancelar" Command="{Binding CancelCommand}" />
+    </ContentPage.ToolbarItems>
+
+    <Grid Padding="5" VerticalOptions="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label
+                Text="Formulario de Registro"
+                FontSize="Large"
+                Grid.Row="0"
+                HorizontalOptions="Center"
+                FontAttributes="Bold"
+                TextColor="Black"/>
+        <Frame Grid.Row="1" CornerRadius="30">
+            <StackLayout Orientation="Vertical">
+                <Label
+                        Margin="10,0,0,0"
+                        Text="Nombre"
+                        FontSize="Medium"
+                        FontAttributes="Bold"/>
+                <Entry
+                        Text="{Binding Name}"
+                        Placeholder="Escriba su nombre"/>
+                <Label
+                        Text="Usuario"
+                        FontSize="Medium"
+                        FontAttributes="Bold"
+                        Margin="10,0,0,0"/>
+                <Entry
+                        Text="{Binding UserName}"
+                        Placeholder="Escriba su Nombre de Usuario"/>
+                <Label 
+                        Text="Contraseña"
+                        FontSize="Medium"
+                        Margin="10,0,0,0"
+                        FontAttributes="Bold"/>
+                <Entry
+                        Text="{Binding Password}"
+                        Placeholder="Escriba su Contraseña"/>
+            </StackLayout>
+        </Frame>
+    </Grid>
 </ContentPage>
