@@ -10,7 +10,7 @@ namespace ChatApp
         public App()
         {
             InitializeComponent();
-
+            XF.Material.Forms.Material.Init(this);
             MainPage = new LoginPage();
         }
 

@@ -27,11 +27,16 @@ namespace ChatApp.Droid.Firebase
                 var token = await user.User.GetIdTokenAsync(false);
                 return token.Token;
             }
-            catch (FirebaseAuthInvalidUserException e)
+            catch (Exception ex)
             {
-                e.PrintStackTrace();
+               // ex.PrintStackTrace();
                 return "";
             }
+            //catch (FirebaseAuthInvalidUserException e)
+            //{
+            //    e.PrintStackTrace();
+            //    return "";
+            //}
         }
     }
 }

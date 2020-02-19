@@ -5,14 +5,17 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
+using XF.Material.Forms.UI.Dialogs;
 
 namespace ChatApp.ViewModels
 {
     public class LoginViewModel : INotifyPropertyChanged
     {
         private IAuth auth;
+        private string Token;
         public event PropertyChangedEventHandler PropertyChanged;
         public string UserName { get; set; }
         public string Password { get; set; }
@@ -26,8 +29,12 @@ namespace ChatApp.ViewModels
         }
         public async void validaterLogin()
         {
-            
-            string Token = await auth.LoginWithEmailPassword(UserName, Password);
+            using (await MaterialDialog.Instance.LoadingDialogAsync(message: "Cargando..."))
+            {
+                 Token = await auth.LoginWithEmailPassword(UserName+"@gmail.com", Password);
+            }
+
+       
             if (Token != "")
             {
                 await App.Current.MainPage.Navigation.PushModalAsync(new MainPage());
@@ -44,7 +51,11 @@ namespace ChatApp.ViewModels
         }
         async private void ShowError()
         {
-            await App.Current.MainPage.DisplayAlert("Error", "Usuario o Contraseña estan incorrecto. Trate de nuevo!", "OK");
+            await MaterialDialog.Instance.SnackbarAsync(message: "Usuario o Contraseña estan incorrecto. Trate de nuevo!",
+                                                         actionButtonText: "Ok",
+                                                        msDuration: MaterialSnackbar.DurationLong);
+           // await App.Current.MainPage.DisplayAlert("Error", "Usuario o Contraseña estan incorrecto. Trate de nuevo!", "OK");
         }
     }
 }
+ 
