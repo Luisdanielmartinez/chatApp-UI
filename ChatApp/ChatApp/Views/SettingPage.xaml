@@ -17,23 +17,23 @@
             </Setter>
         </Style>
     </Page.Resources>
-    <Grid>
+    <Grid Padding="3">
         <Grid.RowDefinitions>
             <RowDefinition Height="80"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <Frame 
             Grid.Row="0" 
             Style="{StaticResource styleFramePerfile}">
             <StackLayout 
-                Orientation="Horizontal" 
-                VerticalOptions="Start">
+                  Orientation="Horizontal" 
+                  VerticalOptions="Start">
                 <Image
-                   
                    VerticalOptions="StartAndExpand"
                    HorizontalOptions="EndAndExpand"
                    Source="ic_exit_to_app.png"/>
             </StackLayout>
-   
         </Frame>
+    
     </Grid>
 </ContentPage>

@@ -141,6 +141,9 @@
     <PackageReference Include="Xamarin.Firebase.iOS.Auth">
       <Version>6.2.1.2</Version>
     </PackageReference>
+    <PackageReference Include="Xamarin.Firebase.iOS.CloudFirestore">
+      <Version>1.4.2.1</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="4.4.0.991640" />
     <PackageReference Include="Xamarin.Essentials" Version="1.4.0" />
     <PackageReference Include="XF.Material">
