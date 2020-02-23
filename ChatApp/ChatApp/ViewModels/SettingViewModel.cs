@@ -13,7 +13,7 @@ namespace ChatApp.ViewModels
     public class SettingViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
-        public ICommand RegisterCommand => new RelayCommand(goToLoginPage);
+        public ICommand LogoutCommand => new RelayCommand(goToLoginPage);
 
         public SettingViewModel()
         {

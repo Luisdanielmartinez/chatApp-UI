@@ -2701,19 +2701,19 @@ namespace ChatApp.Droid
 			global::Xamarin.Essentials.Resource.Drawable.notification_template_icon_low_bg = global::ChatApp.Droid.Resource.Drawable.notification_template_icon_low_bg;
 			global::Xamarin.Essentials.Resource.Drawable.notification_tile_bg = global::ChatApp.Droid.Resource.Drawable.notification_tile_bg;
 			global::Xamarin.Essentials.Resource.Drawable.notify_panel_notification_icon_bg = global::ChatApp.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Xamarin.Essentials.Resource.Id.actions = global::ChatApp.Droid.Resource.Id.actions;
 			global::Xamarin.Essentials.Resource.Id.action_container = global::ChatApp.Droid.Resource.Id.action_container;
 			global::Xamarin.Essentials.Resource.Id.action_divider = global::ChatApp.Droid.Resource.Id.action_divider;
 			global::Xamarin.Essentials.Resource.Id.action_image = global::ChatApp.Droid.Resource.Id.action_image;
 			global::Xamarin.Essentials.Resource.Id.action_text = global::ChatApp.Droid.Resource.Id.action_text;
-			global::Xamarin.Essentials.Resource.Id.actions = global::ChatApp.Droid.Resource.Id.actions;
 			global::Xamarin.Essentials.Resource.Id.all = global::ChatApp.Droid.Resource.Id.all;
 			global::Xamarin.Essentials.Resource.Id.async = global::ChatApp.Droid.Resource.Id.async;
 			global::Xamarin.Essentials.Resource.Id.blocking = global::ChatApp.Droid.Resource.Id.blocking;
 			global::Xamarin.Essentials.Resource.Id.bottom = global::ChatApp.Droid.Resource.Id.bottom;
 			global::Xamarin.Essentials.Resource.Id.browser_actions_header_text = global::ChatApp.Droid.Resource.Id.browser_actions_header_text;
+			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_items = global::ChatApp.Droid.Resource.Id.browser_actions_menu_items;
 			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_item_icon = global::ChatApp.Droid.Resource.Id.browser_actions_menu_item_icon;
 			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_item_text = global::ChatApp.Droid.Resource.Id.browser_actions_menu_item_text;
-			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_items = global::ChatApp.Droid.Resource.Id.browser_actions_menu_items;
 			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_view = global::ChatApp.Droid.Resource.Id.browser_actions_menu_view;
 			global::Xamarin.Essentials.Resource.Id.center = global::ChatApp.Droid.Resource.Id.center;
 			global::Xamarin.Essentials.Resource.Id.center_horizontal = global::ChatApp.Droid.Resource.Id.center_horizontal;
@@ -2768,14 +2768,12 @@ namespace ChatApp.Droid
 			global::Xamarin.Essentials.Resource.Style.Widget_Compat_NotificationActionContainer = global::ChatApp.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
 			global::Xamarin.Essentials.Resource.Style.Widget_Compat_NotificationActionText = global::ChatApp.Droid.Resource.Style.Widget_Compat_NotificationActionText;
 			global::Xamarin.Essentials.Resource.Style.Widget_Support_CoordinatorLayout = global::ChatApp.Droid.Resource.Style.Widget_Support_CoordinatorLayout;
-			global::Xamarin.Essentials.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::ChatApp.Droid.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
 			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem = global::ChatApp.Droid.Resource.Styleable.ColorStateListItem;
 			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem_alpha = global::ChatApp.Droid.Resource.Styleable.ColorStateListItem_alpha;
 			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem_android_alpha = global::ChatApp.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
 			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem_android_color = global::ChatApp.Droid.Resource.Styleable.ColorStateListItem_android_color;
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout = global::ChatApp.Droid.Resource.Styleable.CoordinatorLayout;
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_keylines = global::ChatApp.Droid.Resource.Styleable.CoordinatorLayout_keylines;
-			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::ChatApp.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout = global::ChatApp.Droid.Resource.Styleable.CoordinatorLayout_Layout;
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::ChatApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::ChatApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
@@ -2784,13 +2782,8 @@ namespace ChatApp.Droid
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::ChatApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::ChatApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::ChatApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::ChatApp.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamily = global::ChatApp.Droid.Resource.Styleable.FontFamily;
-			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderAuthority = global::ChatApp.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
-			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderCerts = global::ChatApp.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
-			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::ChatApp.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
-			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::ChatApp.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
-			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderPackage = global::ChatApp.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
-			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderQuery = global::ChatApp.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont = global::ChatApp.Droid.Resource.Styleable.FontFamilyFont;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_android_font = global::ChatApp.Droid.Resource.Styleable.FontFamilyFont_android_font;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_android_fontStyle = global::ChatApp.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
@@ -2802,7 +2795,16 @@ namespace ChatApp.Droid
 			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::ChatApp.Droid.Resource.Styleable.FontFamilyFont_fontVariationSettings;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_fontWeight = global::ChatApp.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_ttcIndex = global::ChatApp.Droid.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderAuthority = global::ChatApp.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderCerts = global::ChatApp.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::ChatApp.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::ChatApp.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderPackage = global::ChatApp.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderQuery = global::ChatApp.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor = global::ChatApp.Droid.Resource.Styleable.GradientColor;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem = global::ChatApp.Droid.Resource.Styleable.GradientColorItem;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem_android_color = global::ChatApp.Droid.Resource.Styleable.GradientColorItem_android_color;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem_android_offset = global::ChatApp.Droid.Resource.Styleable.GradientColorItem_android_offset;
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_centerColor = global::ChatApp.Droid.Resource.Styleable.GradientColor_android_centerColor;
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_centerX = global::ChatApp.Droid.Resource.Styleable.GradientColor_android_centerX;
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_centerY = global::ChatApp.Droid.Resource.Styleable.GradientColor_android_centerY;
@@ -2815,9 +2817,7 @@ namespace ChatApp.Droid
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_startY = global::ChatApp.Droid.Resource.Styleable.GradientColor_android_startY;
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_tileMode = global::ChatApp.Droid.Resource.Styleable.GradientColor_android_tileMode;
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_type = global::ChatApp.Droid.Resource.Styleable.GradientColor_android_type;
-			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem = global::ChatApp.Droid.Resource.Styleable.GradientColorItem;
-			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem_android_color = global::ChatApp.Droid.Resource.Styleable.GradientColorItem_android_color;
-			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem_android_offset = global::ChatApp.Droid.Resource.Styleable.GradientColorItem_android_offset;
+			global::Xamarin.Essentials.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::ChatApp.Droid.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_in = global::ChatApp.Droid.Resource.Animation.abc_fade_in;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_out = global::ChatApp.Droid.Resource.Animation.abc_fade_out;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::ChatApp.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -11191,97 +11191,100 @@ namespace ChatApp.Droid
 			public const int ic_chat = 2131165313;
 			
 			// aapt resource value: 0x7F070082
-			public const int ic_home = 2131165314;
+			public const int ic_exit_to_app = 2131165314;
 			
 			// aapt resource value: 0x7F070083
-			public const int ic_mtrl_chip_checked_black = 2131165315;
+			public const int ic_home = 2131165315;
 			
 			// aapt resource value: 0x7F070084
-			public const int ic_mtrl_chip_checked_circle = 2131165316;
+			public const int ic_mtrl_chip_checked_black = 2131165316;
 			
 			// aapt resource value: 0x7F070085
-			public const int ic_mtrl_chip_close_circle = 2131165317;
+			public const int ic_mtrl_chip_checked_circle = 2131165317;
 			
 			// aapt resource value: 0x7F070086
-			public const int ic_search = 2131165318;
+			public const int ic_mtrl_chip_close_circle = 2131165318;
 			
 			// aapt resource value: 0x7F070087
-			public const int ic_settings = 2131165319;
+			public const int ic_search = 2131165319;
 			
 			// aapt resource value: 0x7F070088
-			public const int mtrl_snackbar_background = 2131165320;
+			public const int ic_settings = 2131165320;
 			
 			// aapt resource value: 0x7F070089
-			public const int mtrl_tabs_default_indicator = 2131165321;
+			public const int mtrl_snackbar_background = 2131165321;
 			
 			// aapt resource value: 0x7F07008A
-			public const int navigation_empty_icon = 2131165322;
+			public const int mtrl_tabs_default_indicator = 2131165322;
 			
 			// aapt resource value: 0x7F07008B
-			public const int notification_action_background = 2131165323;
+			public const int navigation_empty_icon = 2131165323;
 			
 			// aapt resource value: 0x7F07008C
-			public const int notification_bg = 2131165324;
+			public const int notification_action_background = 2131165324;
 			
 			// aapt resource value: 0x7F07008D
-			public const int notification_bg_low = 2131165325;
+			public const int notification_bg = 2131165325;
 			
 			// aapt resource value: 0x7F07008E
-			public const int notification_bg_low_normal = 2131165326;
+			public const int notification_bg_low = 2131165326;
 			
 			// aapt resource value: 0x7F07008F
-			public const int notification_bg_low_pressed = 2131165327;
+			public const int notification_bg_low_normal = 2131165327;
 			
 			// aapt resource value: 0x7F070090
-			public const int notification_bg_normal = 2131165328;
+			public const int notification_bg_low_pressed = 2131165328;
 			
 			// aapt resource value: 0x7F070091
-			public const int notification_bg_normal_pressed = 2131165329;
+			public const int notification_bg_normal = 2131165329;
 			
 			// aapt resource value: 0x7F070092
-			public const int notification_icon_background = 2131165330;
+			public const int notification_bg_normal_pressed = 2131165330;
 			
 			// aapt resource value: 0x7F070093
-			public const int notification_template_icon_bg = 2131165331;
+			public const int notification_icon_background = 2131165331;
 			
 			// aapt resource value: 0x7F070094
-			public const int notification_template_icon_low_bg = 2131165332;
+			public const int notification_template_icon_bg = 2131165332;
 			
 			// aapt resource value: 0x7F070095
-			public const int notification_tile_bg = 2131165333;
+			public const int notification_template_icon_low_bg = 2131165333;
 			
 			// aapt resource value: 0x7F070096
-			public const int notify_panel_notification_icon_bg = 2131165334;
+			public const int notification_tile_bg = 2131165334;
 			
 			// aapt resource value: 0x7F070097
-			public const int tooltip_frame_dark = 2131165335;
+			public const int notify_panel_notification_icon_bg = 2131165335;
 			
 			// aapt resource value: 0x7F070098
-			public const int tooltip_frame_light = 2131165336;
+			public const int tooltip_frame_dark = 2131165336;
 			
 			// aapt resource value: 0x7F070099
-			public const int xf_arrow_dropdown = 2131165337;
+			public const int tooltip_frame_light = 2131165337;
 			
 			// aapt resource value: 0x7F07009A
-			public const int xf_check = 2131165338;
+			public const int xf_arrow_dropdown = 2131165338;
 			
 			// aapt resource value: 0x7F07009B
-			public const int xf_checkbox_selected = 2131165339;
+			public const int xf_check = 2131165339;
 			
 			// aapt resource value: 0x7F07009C
-			public const int xf_checkbox_unselected = 2131165340;
+			public const int xf_checkbox_selected = 2131165340;
 			
 			// aapt resource value: 0x7F07009D
-			public const int xf_clear = 2131165341;
+			public const int xf_checkbox_unselected = 2131165341;
 			
 			// aapt resource value: 0x7F07009E
-			public const int xf_error = 2131165342;
+			public const int xf_clear = 2131165342;
 			
 			// aapt resource value: 0x7F07009F
-			public const int xf_radio_button_selected = 2131165343;
+			public const int xf_error = 2131165343;
 			
 			// aapt resource value: 0x7F0700A0
-			public const int xf_radio_button_unselected = 2131165344;
+			public const int xf_radio_button_selected = 2131165344;
+			
+			// aapt resource value: 0x7F0700A1
+			public const int xf_radio_button_unselected = 2131165345;
 			
 			static Drawable()
 			{
@@ -12284,26 +12287,29 @@ namespace ChatApp.Droid
 		public partial class Mipmap
 		{
 			
-			// aapt resource value: 0x7F0C0004
-			public const int icon = 2131492868;
-			
 			// aapt resource value: 0x7F0C0005
-			public const int icon_round = 2131492869;
+			public const int icon = 2131492869;
+			
+			// aapt resource value: 0x7F0C0006
+			public const int icon_round = 2131492870;
 			
 			// aapt resource value: 0x7F0C0000
 			public const int ic_chat = 2131492864;
 			
 			// aapt resource value: 0x7F0C0001
-			public const int ic_home = 2131492865;
+			public const int ic_exit_to_app = 2131492865;
 			
 			// aapt resource value: 0x7F0C0002
-			public const int ic_search = 2131492866;
+			public const int ic_home = 2131492866;
 			
 			// aapt resource value: 0x7F0C0003
-			public const int ic_settings = 2131492867;
+			public const int ic_search = 2131492867;
 			
-			// aapt resource value: 0x7F0C0006
-			public const int launcher_foreground = 2131492870;
+			// aapt resource value: 0x7F0C0004
+			public const int ic_settings = 2131492868;
+			
+			// aapt resource value: 0x7F0C0007
+			public const int launcher_foreground = 2131492871;
 			
 			static Mipmap()
 			{

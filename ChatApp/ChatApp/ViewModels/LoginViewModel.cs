@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using XF.Material.Forms.UI.Dialogs;
 
@@ -32,6 +33,7 @@ namespace ChatApp.ViewModels
             using (await MaterialDialog.Instance.LoadingDialogAsync(message: "Cargando..."))
             {
                  Token = await auth.LoginWithEmailPassword(UserName+"@gmail.com", Password);
+                 Preferences.Set("token", Token);
             }
 
        

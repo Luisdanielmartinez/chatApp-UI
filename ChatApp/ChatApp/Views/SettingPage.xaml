@@ -5,11 +5,35 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="ChatApp.Views.SettingPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <Page.Resources>
+        <Style x:Key="styleFramePerfile" TargetType="Frame">
+            <Setter Property="BackgroundColor">
+                <Setter.Value>
+                    <OnPlatform x:TypeArguments="Color">
+                        <On Platform="Android" Value="Transparent"/>
+                        <On Platform="ios" Value="Transparent"/>
+                    </OnPlatform>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+        <Frame 
+            Grid.Row="0" 
+            Style="{StaticResource styleFramePerfile}">
+            <StackLayout 
+                Orientation="Horizontal" 
+                VerticalOptions="Start">
+                <Image
+                   
+                   VerticalOptions="StartAndExpand"
+                   HorizontalOptions="EndAndExpand"
+                   Source="ic_exit_to_app.png"/>
+            </StackLayout>
+   
+        </Frame>
+    </Grid>
 </ContentPage>
