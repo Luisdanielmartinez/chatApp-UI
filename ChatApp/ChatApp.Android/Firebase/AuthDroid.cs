@@ -19,6 +19,20 @@ namespace ChatApp.Droid.Firebase
 {
     public class AuthDroid: IAuth
     {
+        public async Task<string> CreateUserWithEmailPassword(string email, string password)
+        {
+            var error = "";
+            try
+            {
+                FirebaseAuth.Instance.CreateUserWithEmailAndPassword(email,password);
+            }
+            catch (FirebaseAuthInvalidUserException e)
+            {
+                error = "El usuario ya existe, escriba otro usuario";
+            }
+            return error;
+        }
+
         public async Task<string> LoginWithEmailPassword(string email, string password)
         {
             try
@@ -37,6 +51,19 @@ namespace ChatApp.Droid.Firebase
             //    e.PrintStackTrace();
             //    return "";
             //}
+        }
+
+        public async Task<string> LogOutUser()
+        {
+            try
+            {
+                FirebaseAuth.Instance.SignOut();
+                return "logout";
+            }
+            catch (Exception e)
+            {
+                return "";
+            }
         }
     }
 }

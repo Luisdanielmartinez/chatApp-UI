@@ -9,6 +9,11 @@
     <PackageReference Include="FirebaseDatabase.net" Version="4.0.4" />
     <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
     <PackageReference Include="PropertyChanged.Fody" Version="3.2.6" />
+    <PackageReference Include="Realm" Version="4.3.0" />
+    <PackageReference Include="Realm.Fody" Version="4.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Xamarin.Firebase.Core" Version="60.1142.1" />
     <PackageReference Include="Xamarin.Forms" Version="4.4.0.991640" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
