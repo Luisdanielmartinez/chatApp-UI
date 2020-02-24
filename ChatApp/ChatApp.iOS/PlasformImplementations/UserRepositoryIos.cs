@@ -10,7 +10,9 @@ using ChatApp.Settings;
 using Foundation;
 using Newtonsoft.Json;
 using UIKit;
+using Xamarin.Forms;
 
+[assembly: Dependency(typeof(ChatApp.iOS.PlasformImplementations.UserRepositoryIos))]
 namespace ChatApp.iOS.PlasformImplementations
 {
     public class UserRepositoryIos : IRepository<User>
